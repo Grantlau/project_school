@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :teachers
+  resources :students
+  resources :grades
+  resources :courses
   devise_for :users
   root 'pages#home'
   get '/about' => 'pages#about'
